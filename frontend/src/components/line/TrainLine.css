@@ -1,0 +1,144 @@
+.train-line {
+  display: block;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+
+svg {
+  height: 50px;
+}
+
+.victoria {
+  --line-color: #009fe3;
+}
+
+.jubilee {
+  --line-color: #6a7278;
+}
+
+.central {
+  --line-color: #dc241f;
+}
+
+.metropolitan {
+  --line-color: #751056;
+}
+
+.northern {
+  --line-color: #000;
+}
+
+.bakerloo {
+  --line-color: #b26300;
+}
+
+.piccadilly {
+  --line-color: #0019a8;
+}
+
+.district {
+  --line-color: #007229;
+}
+
+.hammersmith {
+  --line-color: #F3A9BB;
+}
+
+.circle {
+  --line-color: #FFD300;
+}
+
+.line-color {
+  stroke: var(--line-color);
+  stroke-width: 10px;
+}
+
+.station {
+  fill: #fff;
+  stroke: black;
+  stroke-width: 4px;
+}
+
+.station-name {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: normal;
+  color: #555;
+  height: 48px;
+  overflow: hidden;
+  white-space: pre-line;
+}
+
+.active {
+  fill: var(--line-color);
+}
+
+.line-container {
+  display: flex;
+  justify-content: flex-start;
+  min-width: 1000px;
+  margin-left: 3300px;
+}
+
+.line-name {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: normal;
+  color: #555;
+  text-align: center;
+  width: 1700px;
+}
+
+@media only screen and (max-width: 800px) {
+  .train-line {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .line {
+    margin: 20px 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    fill: white;
+  }
+  15% {
+    fill: orange;
+  }
+  30% {
+    fill: red;
+  }
+  50% {
+    fill: orange;
+  }
+  70% {
+    fill: red;
+  }
+  85% {
+    fill: orange;
+  }
+  100% {
+    fill: white;
+  }
+}
+
+.pulse {
+  background-color: white;
+  fill: red;
+  stroke: black;
+  stroke-width: 8px;
+  animation-name: pulse;
+  animation-duration: 3s;
+}

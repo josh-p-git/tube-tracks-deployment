@@ -1,0 +1,36 @@
+.ambience-switch {
+  background-color: rgb(207, 205, 208);
+  border: none;
+  color: rgb(10, 9, 9);
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  border: 2px solid "red";
+  width: 170px;
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-image: rgb(0, 0, 0);
+  transform: translateY(-3px);
+}
+
+.ambience-switch:hover {
+  background-color: #ffffff;
+  color: rgb(255, 0, 0);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ambience-switch.active {
+  background-color: #bc52a0;
+  color: rgb(207, 205, 208);
+}
+
+.features-title {
+  text-align: center;
+  box-shadow: 300px;
+  color: linear-gradient(45deg, #0019a8, #e10808);
+  background-color: linear-gradient(45deg, #0019a8, #e10808);
+  font-size: 17px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-style:oblique;
+}
